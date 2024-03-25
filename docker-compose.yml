@@ -1,0 +1,8 @@
+version: "3"
+services:
+    python-quote-app:
+        ports:
+            - 8090:8090
+        restart: unless-stopped
+        container_name: python-quote-app
+        image: localhost:5000/python-quote-app:1.0.0
